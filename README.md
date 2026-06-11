@@ -106,7 +106,7 @@ startCalibration() 이후 update에 DTM이 주입되면 Calibration이 진행된
 ```swift
 switch positioner.calibrationState {
 case .idle:
-    print("캘리브레이션 대기 중")
+    print("캘리브레이션 중지됨")
     
 case .collecting(let minCount, let perAnchor):
     // [minCount]: 가장 도달 빈도가 낮은 앵커의 누적 횟수. (0~100% Progress Bar UI 게이지 제어 시 유용)
