@@ -98,8 +98,8 @@ positioner.startCalibration(at: knownPosition, targetCount: 100)
 // 오차(Bias)를 백그라운드로 누적 수집하고 2-Sigma 통계 필터링으로 튀는 노이즈를 완전 제거한다.
 ```
 
-**[진행 상태 추적 (`calibrationState`) 및 획득 오프셋(`anchorOffsets`) 세팅 방안]**
-startCalibration() 이후 update에 DTM이 주입되면 Calibration이 진행된다.
+**[진행 상태 추적 (`calibrationState`) 및 획득 오프셋(`anchorOffsets`) 세팅 방안]**  
+startCalibration() 이후 update에 DTM이 주입되면 Calibration이 진행된다.  
 진행 프로그레스는 `@Published var calibrationState` 로 관찰하여 확인 할 수 있다. 
 이를 통해 Anchor Address별 DTM 수신 정보 갯수(`perAnchor`) 및 최종 결과 값(`finalOffsets`)을 제공한다.
 
