@@ -1,7 +1,8 @@
 # gpi-dltdoa (Swift Package)
 
 본 저장소는 `gpi-dltdoa` 측위 코어 알고리즘의 외부 연동 장착을 위한 **배포 전용 릴리즈 저장소(Release Repository)**이다.  
-사전 컴파일(Pre-compiled) 및 난독화가 완료된 정적 `XCFramework` 형태의 바이너리를 SPM(Swift Package Manager) 포맷으로 독립 제공한다.
+사전 컴파일(Pre-compiled) 및 난독화가 완료된 정적 `XCFramework` 형태의 바이너리를 SPM(Swift Package Manager) 포맷으로 독립 제공한다.  
+iOS 실기기(arm64) 및 시뮬레이터(arm64, x86_64) 빌드를 모두 지원하며, 루트 디렉토리의 `VERSION_X.X.X` 파일을 통해 배포 버전을 확인할 수 있다.
 
 > **💡 엔진 코어 역량 요약**
 > Apple의 **Nearby Interaction (UWB)** 인프라 기반 동작.  
@@ -151,6 +152,8 @@ case .completed(let finalOffsets):
   * 패킷 데이터 부족으로 교점이 산출되지 않는 경우 일시적으로 `nil` 상태가 된다.
 * **`@Published var calibrationState: CalibrationState` (읽기 전용)**
   * 현재의 오차 보정(Calibration) 데이터 수집 상태 및 진척도를 나타낸다.
+* **`static var sdkVersion: String` (읽기 전용)**
+  * 현재 SDK의 시멘틱 버전 정보를 반환한다. (예: `"1.1.0"`)
 * **`var anchorCoordinatesOverride: [Int: simd_double3]`**
   * UWB 앵커의 MAC 주소(Key)에 맵핑되는 물리적 절대 3D 좌표(X, Y, Z) 위치를 강제 오버라이드 주입하는 프로퍼티.
 * **`var anchorOffsets: [Int: Double]`**
