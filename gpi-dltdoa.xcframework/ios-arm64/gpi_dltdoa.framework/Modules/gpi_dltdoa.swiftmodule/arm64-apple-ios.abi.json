@@ -271,8 +271,10 @@
         "usr": "s:10gpi_dltdoa16CalibrationStateO",
         "mangledName": "$s10gpi_dltdoa16CalibrationStateO",
         "moduleName": "gpi_dltdoa",
+        "intro_iOS": "27.0",
         "declAttributes": [
           "AccessControl",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -635,6 +637,10 @@
                 "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC7minRssiSdvM",
                 "moduleName": "gpi_dltdoa",
                 "implicit": true,
+                "intro_iOS": "27.0",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -765,6 +771,10 @@
                 "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvM",
                 "moduleName": "gpi_dltdoa",
                 "implicit": true,
+                "intro_iOS": "27.0",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -919,6 +929,219 @@
                 "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC25anchorCoordinatesOverrideSDySis5SIMD3VySdGGvM",
                 "moduleName": "gpi_dltdoa",
                 "implicit": true,
+                "intro_iOS": "27.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "positioningAlgorithm",
+            "printedName": "positioningAlgorithm",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PositioningAlgorithm",
+                "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20positioningAlgorithmAC011PositioningF0Ovp",
+            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20positioningAlgorithmAC011PositioningF0Ovp",
+            "moduleName": "gpi_dltdoa",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PositioningAlgorithm",
+                    "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20positioningAlgorithmAC011PositioningF0Ovg",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20positioningAlgorithmAC011PositioningF0Ovg",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PositioningAlgorithm",
+                    "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20positioningAlgorithmAC011PositioningF0Ovs",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20positioningAlgorithmAC011PositioningF0Ovs",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20positioningAlgorithmAC011PositioningF0OvM",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20positioningAlgorithmAC011PositioningF0OvM",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "intro_iOS": "27.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cfoCorrectionMode",
+            "printedName": "cfoCorrectionMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CfoCorrectionMode",
+                "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17cfoCorrectionModeAC03CfofG0Ovp",
+            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17cfoCorrectionModeAC03CfofG0Ovp",
+            "moduleName": "gpi_dltdoa",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "SPIAccessControl"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CfoCorrectionMode",
+                    "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17cfoCorrectionModeAC03CfofG0Ovg",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17cfoCorrectionModeAC03CfofG0Ovg",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CfoCorrectionMode",
+                    "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17cfoCorrectionModeAC03CfofG0Ovs",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17cfoCorrectionModeAC03CfofG0Ovs",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17cfoCorrectionModeAC03CfofG0OvM",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17cfoCorrectionModeAC03CfofG0OvM",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "intro_iOS": "27.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1052,15 +1275,501 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "PositioningAlgorithm",
+            "printedName": "PositioningAlgorithm",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "ukf",
+                "printedName": "ukf",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm.Type) -> gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PositioningAlgorithm",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                        "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PositioningAlgorithm",
+                            "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO3ukfyA2EmF",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO3ukfyA2EmF",
+                "moduleName": "gpi_dltdoa",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "gradientDescent",
+                "printedName": "gradientDescent",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm.Type) -> gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PositioningAlgorithm",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                        "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PositioningAlgorithm",
+                            "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO15gradientDescentyA2EmF",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO15gradientDescentyA2EmF",
+                "moduleName": "gpi_dltdoa",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PositioningAlgorithm",
+                    "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PositioningAlgorithm",
+                    "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO2eeoiySbAE_AEtFZ",
+                "moduleName": "gpi_dltdoa",
+                "static": true,
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO9hashValueSivp",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO9hashValueSivp",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO9hashValueSivg",
+                    "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO9hashValueSivg",
+                    "moduleName": "gpi_dltdoa",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "Internal"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO4hash4intoys6HasherVz_tF",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO",
+            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO",
+            "moduleName": "gpi_dltdoa",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CfoCorrectionMode",
+            "printedName": "CfoCorrectionMode",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "singlePollCfo",
+                "printedName": "singlePollCfo",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode.Type) -> gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CfoCorrectionMode",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                        "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CfoCorrectionMode",
+                            "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO010singlePollE0yA2EmF",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO010singlePollE0yA2EmF",
+                "moduleName": "gpi_dltdoa",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "rcfoComposite",
+                "printedName": "rcfoComposite",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode.Type) -> gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CfoCorrectionMode",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                        "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CfoCorrectionMode",
+                            "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO13rcfoCompositeyA2EmF",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO13rcfoCompositeyA2EmF",
+                "moduleName": "gpi_dltdoa",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CfoCorrectionMode",
+                    "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CfoCorrectionMode",
+                    "printedName": "gpi_dltdoa.DLTDoAPositioner.CfoCorrectionMode",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO2eeoiySbAE_AEtFZ",
+                "moduleName": "gpi_dltdoa",
+                "static": true,
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO9hashValueSivp",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO9hashValueSivp",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO9hashValueSivg",
+                    "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO9hashValueSivg",
+                    "moduleName": "gpi_dltdoa",
+                    "implicit": true,
+                    "spi_group_names": [
+                      "Internal"
+                    ],
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO4hash4intoys6HasherVz_tF",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO",
+            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17CfoCorrectionModeO",
+            "moduleName": "gpi_dltdoa",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "spi_group_names": [
+              "Internal"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
           }
         ],
         "declKind": "Class",
         "usr": "s:10gpi_dltdoa16DLTDoAPositionerC",
         "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC",
         "moduleName": "gpi_dltdoa",
+        "intro_iOS": "27.0",
         "declAttributes": [
           "AccessControl",
           "Custom",
+          "Available",
           "RawDocComment"
         ],
         "conformances": [
@@ -1123,7 +1832,7 @@
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/PointCalculator.swift",
       "kind": "FloatLiteral",
-      "offset": 654,
+      "offset": 765,
       "length": 3,
       "value": "0.0"
     },
@@ -1214,84 +1923,84 @@
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "Dictionary",
-      "offset": 1444,
+      "offset": 1535,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "Dictionary",
-      "offset": 1744,
+      "offset": 1835,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "IntegerLiteral",
-      "offset": 1799,
+      "offset": 2368,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "StringLiteral",
-      "offset": 1894,
+      "offset": 2463,
       "length": 8,
       "value": "\"DLTDoA\""
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 1956,
+      "offset": 2525,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 1991,
+      "offset": 2560,
       "length": 13,
       "value": "299792458.0"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "Dictionary",
-      "offset": 2058,
+      "offset": 2627,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2130,
+      "offset": 2699,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2136,
+      "offset": 2705,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2142,
+      "offset": 2711,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 2412,
+      "offset": 2981,
       "length": 5,
       "value": "-90.0"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "IntegerLiteral",
-      "offset": 2675,
+      "offset": 3244,
       "length": 3,
       "value": "100"
     },
@@ -1300,7 +2009,7 @@
       "kind": "StringLiteral",
       "offset": 195,
       "length": 7,
-      "value": "\"1.1.1\""
+      "value": "\"1.2.0\""
     }
   ]
 }
