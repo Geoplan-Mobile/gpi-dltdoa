@@ -84,9 +84,15 @@ positioner.anchorCoordinatesOverride = [
 ```
 
 ### 5. 하드웨어 안테나 지연 오차 보정 (Calibration) 및 오프셋 관리
+
+> ⚠️ **v1.2.0 부터 캘리브레이션은 선택 사항이며, 관련 API 는 추후 버전에서 deprecate 될 예정입니다.**  
+> iOS 27 의 API 변화에 맞춰 계산식이 변경되어 캘리 보정 없이도 sub-m 좌표 정확도가 확보됩니다. 캘리를 수행하더라도 산출값은 거의 0에 가깝게 나옵니다.  
+> 이전 버전(v1.1.x 이하)에서 산출한 `anchorOffsets` 데이터는 새 식과 호환되지 않으니 반드시 비우고 사용하세요.
+
 UWB 앵커 기기들은 장치 제조사의 하드웨어 특성에 따른 태생적 송수신 지연이 존재한다.  
 라이브러리는 위치를 이미 정확히 알고 있는 캘리브레이션 테스트 지점(Known Position) 위에  
-스마트폰을 잠시 위치시키어 오차값을 역산출 하는 자동화 API를 내장 지원한다.
+스마트폰을 잠시 위치시키어 오차값을 역산출 하는 자동화 API를 내장 지원한다.  
+(아래 절차는 호환 유지 목적으로만 사용하세요.)
 
 ```swift
 // A. 캘리브레이션 시작 명령 하달
@@ -156,18 +162,19 @@ case .completed(let finalOffsets):
   * 현재 SDK의 시멘틱 버전 정보를 반환한다. (예: `"1.1.0"`)
 * **`var anchorCoordinatesOverride: [Int: simd_double3]`**
   * UWB 앵커의 MAC 주소(Key)에 맵핑되는 물리적 절대 3D 좌표(X, Y, Z) 위치를 강제 오버라이드 주입하는 프로퍼티.
-* **`var anchorOffsets: [Int: Double]`**
+* **`var anchorOffsets: [Int: Double]`** *(v1.2.0+ 캘리 불필요 / 추후 deprecate 예정)*
   * UWB 앵커(MAC 주소)별 하드웨어 안테나 지연 시간(초 단위) 오차값을 교정하기 위한 프로퍼티.  
-  완료된 캘리브레이션 딕셔너리 결과를 주입하면, 이후 수행되는 모든 좌표 계산 시 해당 오프셋이 항시 자동 반영되어 정밀 보정된 교점을 산출한다.
+  완료된 캘리브레이션 딕셔너리 결과를 주입하면, 이후 수행되는 모든 좌표 계산 시 해당 오프셋이 항시 자동 반영되어 정밀 보정된 교점을 산출한다.  
+  v1.2.0 부터 새 계산식 도입으로 보정값이 거의 0 에 수렴하므로 일반적으로 주입 불필요. v1.1.x 이하에서 저장된 값은 새 식과 호환되지 않으니 빈 dict 로 초기화 후 사용할 것.
 * **`var minRssi: Double`**
   * 엔진 구동 중 신호 강도 한계치를 동적으로 변경할 때 사용한다.
 
 #### 3. 핵심 제어 메서드 (Methods)
 * **`func update(measurements: [NIDLTDOAMeasurement])`**
   * Apple의 `NISession`으로부터 수신된 원시 형태의 DTM 배열을 엔진 파이프라인에 공급한다. (통신 이벤트 발생 시마다 호출 필수)
-* **`func startCalibration(at position: simd_double3, targetCount: Int = 100)`**
+* **`func startCalibration(at position: simd_double3, targetCount: Int = 100)`** *(v1.2.0+ 호출 불필요 / 추후 deprecate 예정)*
   * 특정 좌표(`position`)에 단말기를 두고, 앵커당 지정된 횟수(`targetCount`)만큼 패킷 샘플을 수집하여 앵커별 하드웨어 송신 오차 역산출을 명령한다.
-* **`func stopCalibration()`**
+* **`func stopCalibration()`** *(v1.2.0+ 호출 불필요 / 추후 deprecate 예정)*
   * 진행 중인 수집 절차를 즉시 파기하고 대기 상태(idle)로 롤백(Rollback)한다.
 
 ### 데이터 모델: `CalibrationState` (Enum)
