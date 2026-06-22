@@ -5,7 +5,7 @@
 ## [1.2.0] - 2026-06-22
 
 ### ⚠️ Breaking Change — 기존 캘리브레이션 데이터 폐기 필수
-- 시계 환산식이 iOS 27 의 API 변경으로 인해 변경되었습니다.
+- 내부 TDoA 계산식이 iOS 27 의 API 변경으로 인해 변경되었습니다.
 - **v1.1.x 까지의 캘리브레이션으로 산출한 `anchorOffsets` 데이터는 더이상 사용할 수 없습니다.**
 - **마이그레이션**: 기존에 `positioner.anchorOffsets` 에 사용하던 코드 제거.
 - `positioner.anchorOffsets` 프로퍼티 및 관련 캘리 API 는 **추후 버전에서 deprecate 될 예정** 입니다 (당분간 호환을 위해 유지).
