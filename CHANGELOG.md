@@ -2,17 +2,19 @@
 
 모든 주요 변경 사항은 이 파일에 기록됩니다.
 
-## [1.2.0] - 2026-06-22
+## [2.0.0] - 2026-06-23
 
-### ⚠️ Breaking Change — 기존 캘리브레이션 데이터 폐기 필수
-- 내부 TDoA 계산식이 iOS 27 의 API 변경으로 인해 변경되었습니다.
-- **v1.1.x 까지의 캘리브레이션으로 산출한 `anchorOffsets` 데이터는 더이상 사용할 수 없습니다.**
-- **마이그레이션**: 기존에 `positioner.anchorOffsets` 에 사용하던 코드 제거.
-- `positioner.anchorOffsets` 프로퍼티 및 관련 캘리 API 는 **추후 버전에서 deprecate 될 예정** 입니다 (당분간 호환을 위해 유지).
+### ⚠️ Breaking Change — 캘리브레이션 API 전면 제거
+- 내부 TDoA 계산식이 iOS 27 의 API 변경에 맞춰 다시 작성되었습니다. 그 결과 캘리값이 더이상 사용되지 않아 관련 API 를 모두 제거했습니다.
+- 제거된 API:
+  - `DLTDoAPositioner.anchorOffsets`
+  - `DLTDoAPositioner.calibrationState`
+  - `DLTDoAPositioner.startCalibration(at:targetCount:)`
+  - `DLTDoAPositioner.stopCalibration()`
+  - `CalibrationState` enum 전체
+- **마이그레이션**: 위 API 를 참조하는 호스트 앱 코드를 모두 제거하세요. UserDefaults 등에 영속화한 옛 `anchorOffsets` 데이터도 사용처가 없어졌으므로 함께 정리하시면 됩니다.
 
 ### 변경됨
-- 캘리브레이션 단계가 **선택 사항**으로 바뀌었습니다. 일반 운영에서는 호출 불필요.(한다해도 거의 0에 수렴)
-  - 기존 `startCalibration` / `stopCalibration` API 는 호환을 위해 유지됩니다.
 - 측위 요구사항: **iOS 27.0+ 기기** 에서만 측위 가능. framework 의 deployment target 은 iOS 18 그대로 유지되므로 SPM 추가는 낮은 베이스라인 앱에서도 가능하나, 측위 호출은 `if #available(iOS 27.0, *)` 가드가 필요합니다.
 
 ## [1.1.1] - 2026-06-12

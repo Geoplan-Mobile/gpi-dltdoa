@@ -11,12 +11,6 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import simd
 @available(iOS 27.0, *)
-public enum CalibrationState {
-  case idle
-  case collecting(minCount: Swift::Int, perAnchor: [Swift::Int : Swift::Int])
-  case completed([Swift::Int : Swift::Double])
-}
-@available(iOS 27.0, *)
 @_Concurrency::MainActor public class DLTDoAPositioner : Foundation::ObservableObject {
   @Combine::Published<simd::simd_double3?> @_projectedValueProperty($estimatedPosition) @_Concurrency::MainActor public var estimatedPosition: simd::simd_double3? {
     get
@@ -24,23 +18,14 @@ public enum CalibrationState {
   @_Concurrency::MainActor public var $estimatedPosition: Combine::Published<simd::simd_double3?>.Combine::Publisher {
     get
   }
-  @Combine::Published<gpi_dltdoa::CalibrationState> @_projectedValueProperty($calibrationState) @_Concurrency::MainActor public var calibrationState: gpi_dltdoa::CalibrationState {
-    get
-  }
-  @_Concurrency::MainActor public var $calibrationState: Combine::Published<gpi_dltdoa::CalibrationState>.Combine::Publisher {
-    get
-  }
   @_Concurrency::MainActor public static var sdkVersion: Swift::String {
     get
   }
   @_Concurrency::MainActor public var minRssi: Swift::Double
-  @_Concurrency::MainActor public var anchorOffsets: [Swift::Int : Swift::Double]
   @_Concurrency::MainActor public var anchorCoordinatesOverride: [Swift::Int : simd::simd_double3]
   @_spi(Internal) @_Concurrency::MainActor public var positioningAlgorithm: gpi_dltdoa::DLTDoAPositioner.gpi_dltdoa::PositioningAlgorithm
   @_spi(Internal) @_Concurrency::MainActor public var cfoCorrectionMode: gpi_dltdoa::DLTDoAPositioner.gpi_dltdoa::CfoCorrectionMode
   @_Concurrency::MainActor public init(minRssi: Swift::Double = -90.0)
-  @_Concurrency::MainActor public func startCalibration(at position: simd::simd_double3, targetCount: Swift::Int = 100)
-  @_Concurrency::MainActor public func stopCalibration()
   @_Concurrency::MainActor public func update(measurements: [NearbyInteraction::NIDLTDOAMeasurement])
   @available(iOS 27.0, *)
   public typealias ObjectWillChangePublisher = Combine::ObservableObjectPublisher

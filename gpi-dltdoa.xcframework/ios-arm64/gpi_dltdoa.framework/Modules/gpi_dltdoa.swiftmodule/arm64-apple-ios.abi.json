@@ -76,226 +76,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CalibrationState",
-        "printedName": "CalibrationState",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "idle",
-            "printedName": "idle",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(gpi_dltdoa.CalibrationState.Type) -> gpi_dltdoa.CalibrationState",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CalibrationState",
-                    "printedName": "gpi_dltdoa.CalibrationState",
-                    "usr": "s:10gpi_dltdoa16CalibrationStateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "gpi_dltdoa.CalibrationState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CalibrationState",
-                        "printedName": "gpi_dltdoa.CalibrationState",
-                        "usr": "s:10gpi_dltdoa16CalibrationStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10gpi_dltdoa16CalibrationStateO4idleyA2CmF",
-            "mangledName": "$s10gpi_dltdoa16CalibrationStateO4idleyA2CmF",
-            "moduleName": "gpi_dltdoa",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "collecting",
-            "printedName": "collecting",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(gpi_dltdoa.CalibrationState.Type) -> (Swift.Int, [Swift.Int : Swift.Int]) -> gpi_dltdoa.CalibrationState",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int, [Swift.Int : Swift.Int]) -> gpi_dltdoa.CalibrationState",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CalibrationState",
-                        "printedName": "gpi_dltdoa.CalibrationState",
-                        "usr": "s:10gpi_dltdoa16CalibrationStateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(minCount: Swift.Int, perAnchor: [Swift.Int : Swift.Int])",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Dictionary",
-                            "printedName": "[Swift.Int : Swift.Int]",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int",
-                                "printedName": "Swift.Int",
-                                "usr": "s:Si"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int",
-                                "printedName": "Swift.Int",
-                                "usr": "s:Si"
-                              }
-                            ],
-                            "usr": "s:SD"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "gpi_dltdoa.CalibrationState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CalibrationState",
-                        "printedName": "gpi_dltdoa.CalibrationState",
-                        "usr": "s:10gpi_dltdoa16CalibrationStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10gpi_dltdoa16CalibrationStateO10collectingyACSi_SDyS2iGtcACmF",
-            "mangledName": "$s10gpi_dltdoa16CalibrationStateO10collectingyACSi_SDyS2iGtcACmF",
-            "moduleName": "gpi_dltdoa",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "completed",
-            "printedName": "completed",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(gpi_dltdoa.CalibrationState.Type) -> ([Swift.Int : Swift.Double]) -> gpi_dltdoa.CalibrationState",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "([Swift.Int : Swift.Double]) -> gpi_dltdoa.CalibrationState",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CalibrationState",
-                        "printedName": "gpi_dltdoa.CalibrationState",
-                        "usr": "s:10gpi_dltdoa16CalibrationStateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.Int : Swift.Double]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Double",
-                            "printedName": "Swift.Double",
-                            "usr": "s:Sd"
-                          }
-                        ],
-                        "usr": "s:SD"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "gpi_dltdoa.CalibrationState.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CalibrationState",
-                        "printedName": "gpi_dltdoa.CalibrationState",
-                        "usr": "s:10gpi_dltdoa16CalibrationStateO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10gpi_dltdoa16CalibrationStateO9completedyACSDySiSdGcACmF",
-            "mangledName": "$s10gpi_dltdoa16CalibrationStateO9completedyACSDySiSdGcACmF",
-            "moduleName": "gpi_dltdoa",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:10gpi_dltdoa16CalibrationStateO",
-        "mangledName": "$s10gpi_dltdoa16CalibrationStateO",
-        "moduleName": "gpi_dltdoa",
-        "intro_iOS": "27.0",
-        "declAttributes": [
-          "AccessControl",
-          "Available",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "DLTDoAPositioner",
         "printedName": "DLTDoAPositioner",
         "children": [
@@ -413,93 +193,6 @@
                 "declKind": "Accessor",
                 "usr": "s:10gpi_dltdoa16DLTDoAPositionerC18$estimatedPosition7Combine9PublishedV9PublisherVys5SIMD3VySdGSg_Gvg",
                 "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC18$estimatedPosition7Combine9PublishedV9PublisherVys5SIMD3VySdGSg_Gvg",
-                "moduleName": "gpi_dltdoa",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "calibrationState",
-            "printedName": "calibrationState",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CalibrationState",
-                "printedName": "gpi_dltdoa.CalibrationState",
-                "usr": "s:10gpi_dltdoa16CalibrationStateO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC16calibrationStateAA011CalibrationF0Ovp",
-            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC16calibrationStateAA011CalibrationF0Ovp",
-            "moduleName": "gpi_dltdoa",
-            "declAttributes": [
-              "Custom",
-              "ProjectedValueProperty",
-              "SetterAccess",
-              "AccessControl",
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CalibrationState",
-                    "printedName": "gpi_dltdoa.CalibrationState",
-                    "usr": "s:10gpi_dltdoa16CalibrationStateO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC16calibrationStateAA011CalibrationF0Ovg",
-                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC16calibrationStateAA011CalibrationF0Ovg",
-                "moduleName": "gpi_dltdoa",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "$calibrationState",
-            "printedName": "$calibrationState",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Publisher",
-                "printedName": "Combine.Published<gpi_dltdoa.CalibrationState>.Publisher",
-                "usr": "s:7Combine9PublishedV9PublisherV"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17$calibrationState7Combine9PublishedV9PublisherVyAA011CalibrationF0O_Gvp",
-            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17$calibrationState7Combine9PublishedV9PublisherVyAA011CalibrationF0O_Gvp",
-            "moduleName": "gpi_dltdoa",
-            "implicit": true,
-            "declAttributes": [
-              "Custom"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Publisher",
-                    "printedName": "Combine.Published<gpi_dltdoa.CalibrationState>.Publisher",
-                    "usr": "s:7Combine9PublishedV9PublisherV"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC17$calibrationState7Combine9PublishedV9PublisherVyAA011CalibrationF0O_Gvg",
-                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC17$calibrationState7Combine9PublishedV9PublisherVyAA011CalibrationF0O_Gvg",
                 "moduleName": "gpi_dltdoa",
                 "implicit": true,
                 "accessorKind": "get"
@@ -635,140 +328,6 @@
                 "declKind": "Accessor",
                 "usr": "s:10gpi_dltdoa16DLTDoAPositionerC7minRssiSdvM",
                 "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC7minRssiSdvM",
-                "moduleName": "gpi_dltdoa",
-                "implicit": true,
-                "intro_iOS": "27.0",
-                "declAttributes": [
-                  "Available"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "anchorOffsets",
-            "printedName": "anchorOffsets",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.Int : Swift.Double]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvp",
-            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvp",
-            "moduleName": "gpi_dltdoa",
-            "declAttributes": [
-              "HasInitialValue",
-              "Custom",
-              "HasStorage",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.Int : Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvg",
-                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvg",
-                "moduleName": "gpi_dltdoa",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.Int : Swift.Double]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Double",
-                        "printedName": "Swift.Double",
-                        "usr": "s:Sd"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvs",
-                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvs",
-                "moduleName": "gpi_dltdoa",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvM",
-                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC13anchorOffsetsSDySiSdGvM",
                 "moduleName": "gpi_dltdoa",
                 "implicit": true,
                 "intro_iOS": "27.0",
@@ -1174,71 +733,6 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "startCalibration",
-            "printedName": "startCalibration(at:targetCount:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "SIMD3",
-                "printedName": "Swift.SIMD3<Swift.Double>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "usr": "s:s5SIMD3V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC16startCalibration2at11targetCountys5SIMD3VySdG_SitF",
-            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC16startCalibration2at11targetCountys5SIMD3VySdG_SitF",
-            "moduleName": "gpi_dltdoa",
-            "declAttributes": [
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stopCalibration",
-            "printedName": "stopCalibration()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC15stopCalibrationyyF",
-            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC15stopCalibrationyyF",
-            "moduleName": "gpi_dltdoa",
-            "declAttributes": [
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -1923,93 +1417,44 @@
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "Dictionary",
-      "offset": 1535,
+      "offset": 1048,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
-      "kind": "Dictionary",
-      "offset": 1835,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2368,
-      "length": 3,
-      "value": "100"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "StringLiteral",
-      "offset": 2463,
+      "offset": 1625,
       "length": 8,
       "value": "\"DLTDoA\""
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 2525,
+      "offset": 1687,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 2560,
+      "offset": 1722,
       "length": 13,
       "value": "299792458.0"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
-      "kind": "Dictionary",
-      "offset": 2627,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2699,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2705,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2711,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 2981,
+      "offset": 2003,
       "length": 5,
       "value": "-90.0"
-    },
-    {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3244,
-      "length": 3,
-      "value": "100"
     },
     {
       "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/Version.swift",
       "kind": "StringLiteral",
       "offset": 195,
       "length": 7,
-      "value": "\"1.2.0\""
+      "value": "\"2.0.0\""
     }
   ]
 }

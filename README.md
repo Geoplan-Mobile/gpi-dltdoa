@@ -83,61 +83,6 @@ positioner.anchorCoordinatesOverride = [
 ]
 ```
 
-### 5. 하드웨어 안테나 지연 오차 보정 (Calibration) 및 오프셋 관리
-
-> ⚠️ **v1.2.0 부터 캘리브레이션은 선택 사항이며, 관련 API 는 추후 버전에서 deprecate 될 예정입니다.**  
-> iOS 27 의 API 변화에 맞춰 계산식이 변경되어 캘리 보정 없이도 sub-m 좌표 정확도가 확보됩니다. 캘리를 수행하더라도 산출값은 거의 0에 가깝게 나옵니다.  
-> 이전 버전(v1.1.x 이하)에서 산출한 `anchorOffsets` 데이터는 새 식과 호환되지 않으니 반드시 비우고 사용하세요.
-
-UWB 앵커 기기들은 장치 제조사의 하드웨어 특성에 따른 태생적 송수신 지연이 존재한다.  
-라이브러리는 위치를 이미 정확히 알고 있는 캘리브레이션 테스트 지점(Known Position) 위에  
-스마트폰을 잠시 위치시키어 오차값을 역산출 하는 자동화 API를 내장 지원한다.  
-(아래 절차는 호환 유지 목적으로만 사용하세요.)
-
-```swift
-// A. 캘리브레이션 시작 명령 하달
-// 현재 폰의 물리적 정답 좌표(예: x: 1.0m, y: 1.0m 지점)와 누적 대기할 샘플 카운트(기본 최소 100회) 주입.
-let knownPosition = simd_double3(1.0, 1.0, 0.0)
-positioner.startCalibration(at: knownPosition, targetCount: 100)
-
-// B. 오차 역산출 (내부 자동 수집)
-// 명령 하달 이후 NISession에서 positioner.update() 가 호출될 때 마다, 
-// 오차(Bias)를 백그라운드로 누적 수집하고 2-Sigma 통계 필터링으로 튀는 노이즈를 완전 제거한다.
-```
-
-**[진행 상태 추적 (`calibrationState`) 및 획득 오프셋(`anchorOffsets`) 세팅 방안]**  
-startCalibration() 이후 update에 DTM이 주입되면 Calibration이 진행된다.  
-진행 프로그레스는 `@Published var calibrationState` 로 관찰하여 확인 할 수 있다.  
-이를 통해 Anchor Address별 DTM 수신 정보 갯수(`perAnchor`) 및 최종 결과 값(`finalOffsets`)을 제공한다.
-
-```swift
-switch positioner.calibrationState {
-case .idle:
-    print("캘리브레이션 중지됨")
-    
-case .collecting(let minCount, let perAnchor):
-    // [minCount]: 가장 도달 빈도가 낮은 앵커의 누적 횟수. (0~100% Progress Bar UI 게이지 제어 시 유용)
-    // [perAnchor]: 앵커 MAC 주소 자원별로 현재 도달한 세부 패킷 카운트 딕셔너리 ([Int: Int])
-    print("전체 공통 진행률: \(minCount) / 100")
-    for (mac, count) in perAnchor {
-        print(" - 앵커(\(String(format: "%04X", mac))) 도달률: \(count)회")
-    }
-    
-case .completed(let finalOffsets):
-    print("통계 수집 완료 / 앵커별 캘리브레이션 역산 시간(초): \(finalOffsets)")
-    
-    // 연산이 완료된 캘리브레이터의 반환값(finalOffsets)을 메인 측위 프로퍼티인 anchorOffsets에 직접 덮어씌운다.
-    // ※ 딕셔너리가 주입되면, 이어지는 모든 측위 좌표 계산 시퀀스에서 해당 오차값이 상시 반영되어 보정된다.
-    positioner.anchorOffsets = finalOffsets
-    
-    // (선택) 어플리케이션 구동 시마다 캘리브레이션 절차를 반복 수집하지 않으려면,
-    // 해당 finalOffsets 딕셔너리 객체를 로컬(UserDefaults)이나 원격 Backend DB에 영구 저장해두고, 앱 초기화 시점에 Fetch하여 1회만 주입한다.
-}
-
-// 캘리브레이션 파이프라인 강제 중단 및 초기화 인터페이스
-// positioner.stopCalibration()
-```
-
 ---
 
 ## API 레퍼런스 (API Reference)
@@ -156,33 +101,19 @@ case .completed(let finalOffsets):
 * **`@Published var estimatedPosition: simd_double3?` (읽기 전용)**
   * 실시간으로 연산이 완료된 태그(스마트폰)의 3D 공간 좌표 정보를 방출한다. (단위: 미터)
   * 패킷 데이터 부족으로 교점이 산출되지 않는 경우 일시적으로 `nil` 상태가 된다.
-* **`@Published var calibrationState: CalibrationState` (읽기 전용)**
-  * 현재의 오차 보정(Calibration) 데이터 수집 상태 및 진척도를 나타낸다.
 * **`static var sdkVersion: String` (읽기 전용)**
-  * 현재 SDK의 시멘틱 버전 정보를 반환한다. (예: `"1.1.0"`)
+  * 현재 SDK의 시멘틱 버전 정보를 반환한다. (예: `"2.0.0"`)
 * **`var anchorCoordinatesOverride: [Int: simd_double3]`**
   * UWB 앵커의 MAC 주소(Key)에 맵핑되는 물리적 절대 3D 좌표(X, Y, Z) 위치를 강제 오버라이드 주입하는 프로퍼티.
-* **`var anchorOffsets: [Int: Double]`** *(v1.2.0+ 캘리 불필요 / 추후 deprecate 예정)*
-  * UWB 앵커(MAC 주소)별 하드웨어 안테나 지연 시간(초 단위) 오차값을 교정하기 위한 프로퍼티.  
-  완료된 캘리브레이션 딕셔너리 결과를 주입하면, 이후 수행되는 모든 좌표 계산 시 해당 오프셋이 항시 자동 반영되어 정밀 보정된 교점을 산출한다.  
-  v1.2.0 부터 새 계산식 도입으로 보정값이 거의 0 에 수렴하므로 일반적으로 주입 불필요. v1.1.x 이하에서 저장된 값은 새 식과 호환되지 않으니 빈 dict 로 초기화 후 사용할 것.
 * **`var minRssi: Double`**
   * 엔진 구동 중 신호 강도 한계치를 동적으로 변경할 때 사용한다.
+* ~~**`@Published var calibrationState: CalibrationState` (읽기 전용)**~~ *(v2.0.0 제거됨)*
+* ~~**`var anchorOffsets: [Int: Double]`**~~ *(v2.0.0 제거됨)*
 
 #### 3. 핵심 제어 메서드 (Methods)
 * **`func update(measurements: [NIDLTDOAMeasurement])`**
   * Apple의 `NISession`으로부터 수신된 원시 형태의 DTM 배열을 엔진 파이프라인에 공급한다. (통신 이벤트 발생 시마다 호출 필수)
-* **`func startCalibration(at position: simd_double3, targetCount: Int = 100)`** *(v1.2.0+ 호출 불필요 / 추후 deprecate 예정)*
-  * 특정 좌표(`position`)에 단말기를 두고, 앵커당 지정된 횟수(`targetCount`)만큼 패킷 샘플을 수집하여 앵커별 하드웨어 송신 오차 역산출을 명령한다.
-* **`func stopCalibration()`** *(v1.2.0+ 호출 불필요 / 추후 deprecate 예정)*
-  * 진행 중인 수집 절차를 즉시 파기하고 대기 상태(idle)로 롤백(Rollback)한다.
+* ~~**`func startCalibration(at position: simd_double3, targetCount: Int = 100)`**~~ *(v2.0.0 제거됨)*
+* ~~**`func stopCalibration()`**~~ *(v2.0.0 제거됨)*
 
-### 데이터 모델: `CalibrationState` (Enum)
-캘리브레이션 파이프라인의 생명주기를 관장하는 상태 타입이다.
-
-* **`.idle`**: 초기화 상태 또는 캘리브레이션이 진행 중이 아닌 구간.
-* **`.collecting(minCount: Int, perAnchor: [Int: Int])`**: 샘플 수집 절차가 가동 중인 구간.
-  * `minCount`: 모든 앵커들 중 가장 패킷 도달 횟수가 적은 지연 앵커의 기준 카운트. (0~100% 프로그레스 바 UI 게이지 목적으로 사용 권장)
-  * `perAnchor`: 앵커 MAC 주소별 현재 누적 패킷 측정 샘플 딕셔너리.
-* **`.completed([Int: Double])`**: 목표 카운트 수집이 완료되고 내부 2-Sigma 통계 필터링 연산이 종료되어,
-최종 도출된 **앵커별 오차 시간(Bias)** 딕셔너리를 반환하는 완료 상태.
+### ~~데이터 모델: `CalibrationState` (Enum)~~ *(v2.0.0 제거됨)*
