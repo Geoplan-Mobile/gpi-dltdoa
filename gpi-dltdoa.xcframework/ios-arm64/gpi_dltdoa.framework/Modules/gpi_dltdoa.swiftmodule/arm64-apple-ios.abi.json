@@ -1317,10 +1317,7 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "gpi_dltdoa",
-        "declAttributes": [
-          "RawDocComment"
-        ]
+        "moduleName": "gpi_dltdoa"
       }
     ],
     "json_format_version": 8
@@ -1451,6 +1448,13 @@
       "offset": 2003,
       "length": 5,
       "value": "-90.0"
+    },
+    {
+      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 195,
+      "length": 7,
+      "value": "\"2.0.0\""
     }
   ]
 }
