@@ -1,0 +1,65 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "gpi-dltdoa-release",
+          "kind" : "root",
+          "location" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release",
+          "name" : "gpi-dltdoa-release"
+        },
+        "path" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/gpi-dltdoa.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "gpi-dltdoa"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "gpi-logger",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/Geoplan-Mobile/gpi-logger",
+          "name" : "gpi-logger"
+        },
+        "path" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/checkouts/gpi-logger/gpi-logger.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "gpi-logger"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "gpi-logger",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/Geoplan-Mobile/gpi-logger",
+          "name" : "gpi-logger"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "e3797d00b11baf3be75de4f82d009a7115c34f11",
+            "version" : "1.0.1"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "gpi-logger"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

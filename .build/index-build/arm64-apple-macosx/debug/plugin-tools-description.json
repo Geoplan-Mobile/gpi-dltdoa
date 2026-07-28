@@ -1,0 +1,416 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.gpi-dltdoaSupport-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/sources",
+      "importPath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/Sources/gpi-dltdoaSupport/Empty.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/swift-version-39B54973F684ADAB.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules/gpi_logger_deps.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "gpi_dltdoaSupport",
+      "moduleOutputPath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules/gpi_dltdoaSupport.swiftmodule",
+      "objects" : [
+        "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/Empty.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/include/gpi-dltdoaSupport-Swift.h",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+        "-F",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "gpi_dltdoa_release"
+      ],
+      "outputFileMapPath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules/gpi_dltdoaSupport.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/Sources/gpi-dltdoaSupport/Empty.swift"
+      ],
+      "tempsPath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.gpi-logger-deps-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/sources",
+      "importPath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/checkouts/gpi-logger/Sources/gpi-logger-deps/Placeholder.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/swift-version-39B54973F684ADAB.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "gpi_logger_deps",
+      "moduleOutputPath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules/gpi_logger_deps.swiftmodule",
+      "objects" : [
+        "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/Placeholder.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-Onone",
+        "-enable-testing",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/include/gpi-logger-deps-Swift.h",
+        "-swift-version",
+        "5",
+        "-Xfrontend",
+        "-experimental-lazy-typecheck",
+        "-Xfrontend",
+        "-experimental-skip-all-function-bodies",
+        "-Xfrontend",
+        "-experimental-allow-module-with-compiler-errors",
+        "-Xfrontend",
+        "-empty-abi-descriptor",
+        "-plugin-path",
+        "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+        "-F",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-suppress-warnings",
+        "-package-name",
+        "gpi_logger"
+      ],
+      "outputFileMapPath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules/gpi_logger_deps.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : true,
+      "sources" : [
+        "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/checkouts/gpi-logger/Sources/gpi-logger-deps/Placeholder.swift"
+      ],
+      "tempsPath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "gpi_dltdoaSupport" : [
+      "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "gpi_dltdoaSupport",
+      "-package-name",
+      "gpi_dltdoa_release",
+      "-c",
+      "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/Sources/gpi-dltdoaSupport/Empty.swift",
+      "-I",
+      "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/include/gpi-dltdoaSupport-Swift.h",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+      "-F",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "gpi_dltdoa_release",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "gpi_logger_deps" : [
+      "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "gpi_logger_deps",
+      "-package-name",
+      "gpi_logger",
+      "-c",
+      "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/checkouts/gpi-logger/Sources/gpi-logger-deps/Placeholder.swift",
+      "-I",
+      "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-Onone",
+      "-enable-testing",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/include/gpi-logger-deps-Swift.h",
+      "-swift-version",
+      "5",
+      "-Xfrontend",
+      "-experimental-lazy-typecheck",
+      "-Xfrontend",
+      "-experimental-skip-all-function-bodies",
+      "-Xfrontend",
+      "-experimental-allow-module-with-compiler-errors",
+      "-Xfrontend",
+      "-empty-abi-descriptor",
+      "-plugin-path",
+      "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+      "-F",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.0.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-suppress-warnings",
+      "-package-name",
+      "gpi_logger",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "gpi_dltdoaSupport" : [
+      "gpi_logger_deps",
+      "gpi_logger"
+    ],
+    "gpi_logger_deps" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : [
+      {
+
+      }
+    ]
+  },
+  "writeCommands" : {
+    "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/Sources/gpi-dltdoaSupport/Empty.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/sources"
+    },
+    "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/checkouts/gpi-logger/Sources/gpi-logger-deps/Placeholder.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/sources"
+    },
+    "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/swift-version-39B54973F684ADAB.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/swift-version-39B54973F684ADAB.txt"
+    }
+  }
+}

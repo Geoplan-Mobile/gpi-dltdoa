@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/primary.swiftdeps"
+  },
+  "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/Sources/gpi-dltdoaSupport/Empty.swift": {
+    "dependencies": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/Empty.d",
+    "object": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/Empty.swift.o",
+    "swiftmodule": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/Empty~partial.swiftmodule",
+    "swift-dependencies": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/Empty.swiftdeps",
+    "diagnostics": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/Empty.dia"  }
+}

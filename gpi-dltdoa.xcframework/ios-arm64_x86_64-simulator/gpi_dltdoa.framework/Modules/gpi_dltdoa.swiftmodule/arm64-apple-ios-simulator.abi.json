@@ -9,6 +9,23 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "gpi_dltdoa",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "gpi_logger",
+        "printedName": "gpi_logger",
+        "declKind": "Import",
+        "moduleName": "gpi_dltdoa"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "gpi_dltdoa"
       },
       {
@@ -29,6 +46,20 @@
         "kind": "Import",
         "name": "simd",
         "printedName": "simd",
+        "declKind": "Import",
+        "moduleName": "gpi_dltdoa"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "gpi_dltdoa"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "gpi_dltdoa"
       },
@@ -498,6 +529,216 @@
           },
           {
             "kind": "Var",
+            "name": "assumedTagZ",
+            "printedName": "assumedTagZ",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC11assumedTagZSdvp",
+            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC11assumedTagZSdvp",
+            "moduleName": "gpi_dltdoa",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC11assumedTagZSdvg",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC11assumedTagZSdvg",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC11assumedTagZSdvs",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC11assumedTagZSdvs",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC11assumedTagZSdvM",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC11assumedTagZSdvM",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "intro_iOS": "27.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxSpeedMetersPerSecond",
+            "printedName": "maxSpeedMetersPerSecond",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC23maxSpeedMetersPerSecondSdvp",
+            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC23maxSpeedMetersPerSecondSdvp",
+            "moduleName": "gpi_dltdoa",
+            "declAttributes": [
+              "HasInitialValue",
+              "Custom",
+              "HasStorage",
+              "AccessControl",
+              "SPIAccessControl",
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "Internal"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC23maxSpeedMetersPerSecondSdvg",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC23maxSpeedMetersPerSecondSdvg",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC23maxSpeedMetersPerSecondSdvs",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC23maxSpeedMetersPerSecondSdvs",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC23maxSpeedMetersPerSecondSdvM",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC23maxSpeedMetersPerSecondSdvM",
+                "moduleName": "gpi_dltdoa",
+                "implicit": true,
+                "intro_iOS": "27.0",
+                "declAttributes": [
+                  "Available"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "positioningAlgorithm",
             "printedName": "positioningAlgorithm",
             "children": [
@@ -741,8 +982,25 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Optional",
+                "printedName": "Swift.SIMD3<Swift.Double>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SIMD3",
+                    "printedName": "Swift.SIMD3<Swift.Double>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:s5SIMD3V"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -760,12 +1018,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC6update12measurementsySaySo19NIDLTDOAMeasurementCG_tF",
-            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC6update12measurementsySaySo19NIDLTDOAMeasurementCG_tF",
+            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC6update12measurementss5SIMD3VySdGSgSaySo19NIDLTDOAMeasurementCG_tF",
+            "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC6update12measurementss5SIMD3VySdGSgSaySo19NIDLTDOAMeasurementCG_tF",
             "moduleName": "gpi_dltdoa",
             "declAttributes": [
               "Custom",
               "AccessControl",
+              "DiscardableResult",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -853,6 +1112,49 @@
                 "declKind": "EnumElement",
                 "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO15gradientDescentyA2EmF",
                 "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO15gradientDescentyA2EmF",
+                "moduleName": "gpi_dltdoa",
+                "declAttributes": [
+                  "RawDocComment"
+                ],
+                "spi_group_names": [
+                  "Internal"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "gradientDescent3D",
+                "printedName": "gradientDescent3D",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm.Type) -> gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PositioningAlgorithm",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                        "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PositioningAlgorithm",
+                            "printedName": "gpi_dltdoa.DLTDoAPositioner.PositioningAlgorithm",
+                            "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO17gradientDescent3DyA2EmF",
+                "mangledName": "$s10gpi_dltdoa16DLTDoAPositionerC20PositioningAlgorithmO17gradientDescent3DyA2EmF",
                 "moduleName": "gpi_dltdoa",
                 "declAttributes": [
                   "RawDocComment"
@@ -1318,143 +1620,195 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "gpi_dltdoa"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "gpi_dltdoa",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/PointCalculator.swift",
-      "kind": "FloatLiteral",
-      "offset": 765,
-      "length": 3,
-      "value": "0.0"
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/common\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 378,
+      "length": 12,
+      "value": "\"gpi-dltdoa\""
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFMatrix.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/common\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 789,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/common\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 819,
+      "length": 4,
+      "value": "\"\n\""
+    },
+    {
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFMatrix.swift",
       "kind": "IntegerLiteral",
       "offset": 1633,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFModels.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFModels.swift",
       "kind": "FloatLiteral",
       "offset": 616,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFModels.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFModels.swift",
       "kind": "FloatLiteral",
       "offset": 689,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFModels.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFModels.swift",
       "kind": "IntegerLiteral",
       "offset": 1103,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFModels.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFModels.swift",
       "kind": "IntegerLiteral",
       "offset": 2532,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
       "kind": "IntegerLiteral",
       "offset": 84,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
       "kind": "IntegerLiteral",
       "offset": 117,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
       "kind": "FloatLiteral",
       "offset": 146,
       "length": 4,
       "value": "0.01"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
       "kind": "IntegerLiteral",
       "offset": 152,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
       "kind": "FloatLiteral",
       "offset": 157,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
       "kind": "FloatLiteral",
       "offset": 163,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/ukf\/UKFSolvers.swift",
       "kind": "FloatLiteral",
       "offset": 203,
       "length": 15,
       "value": "0.0046917519677"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/AnchorRxs.swift",
+      "kind": "Array",
+      "offset": 965,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/AnchorRxs.swift",
+      "kind": "Dictionary",
+      "offset": 1026,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/BlockAnchorRxs.swift",
+      "kind": "Array",
+      "offset": 802,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "Dictionary",
       "offset": 1048,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
+      "kind": "FloatLiteral",
+      "offset": 1528,
+      "length": 3,
+      "value": "1.2"
+    },
+    {
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
+      "kind": "FloatLiteral",
+      "offset": 2101,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "StringLiteral",
-      "offset": 1625,
+      "offset": 2678,
       "length": 8,
       "value": "\"DLTDoA\""
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 1687,
+      "offset": 2740,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 1722,
+      "offset": 2775,
       "length": 13,
       "value": "299792458.0"
     },
     {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
+      "filePath": "\/Users\/ksh\/WORKSPACE\/iOS\/gpi-dltdoa\/gpi-dltdoa\/positioning\/DLTDoAPositioner.swift",
       "kind": "FloatLiteral",
-      "offset": 2003,
+      "offset": 3056,
       "length": 5,
       "value": "-90.0"
-    },
-    {
-      "filePath": "\/Users\/byunghyunjeon\/work\/asSite\/internal\/iosLib\/gpi-dltdoa\/gpi-dltdoa\/Version.swift",
-      "kind": "StringLiteral",
-      "offset": 195,
-      "length": 7,
-      "value": "\"2.0.0\""
     }
   ]
 }

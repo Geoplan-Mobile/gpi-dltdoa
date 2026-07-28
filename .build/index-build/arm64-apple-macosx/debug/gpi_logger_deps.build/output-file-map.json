@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/primary.swiftdeps"
+  },
+  "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/checkouts/gpi-logger/Sources/gpi-logger-deps/Placeholder.swift": {
+    "dependencies": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/Placeholder.d",
+    "object": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/Placeholder.swift.o",
+    "swiftmodule": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/Placeholder~partial.swiftmodule",
+    "swift-dependencies": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/Placeholder.swiftdeps",
+    "diagnostics": "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/Placeholder.dia"  }
+}

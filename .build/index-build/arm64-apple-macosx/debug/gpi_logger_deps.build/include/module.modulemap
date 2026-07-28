@@ -1,0 +1,3 @@
+module gpi_logger_deps {
+    header "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_logger_deps.build/include/gpi-logger-deps-Swift.h"
+}

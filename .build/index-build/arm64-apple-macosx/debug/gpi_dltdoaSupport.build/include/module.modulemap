@@ -1,0 +1,3 @@
+module gpi_dltdoaSupport {
+    header "/Users/ksh/WORKSPACE/iOS/gpi-dltdoa-release/.build/index-build/arm64-apple-macosx/debug/gpi_dltdoaSupport.build/include/gpi-dltdoaSupport-Swift.h"
+}
